@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Cobranca</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+
+<body>
+
+<!-- Aqui estamos incluindo o arquivo de cabecalho ao nosso layout padrão -->
+	<header layout:include="Cabecalho"></header>
+	
+	<section layout:fragment="conteudo"> <!-- Aqui nessa parte será o local onde iremos inserir o conteúdo principal da nossa página -->
+		<p>Conteúdo Principal</p>
+	</section>
+	
+
+	<script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/cobranca.js"></script>	
+</body>
+</html>
